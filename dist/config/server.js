@@ -26,7 +26,7 @@ class WebServer {
             app.use(body_parser_1.default.urlencoded({ extended: true }));
             app.use('/', router_1.RouterController);
             app.listen(port, () => {
-                console.log(`Connection API running on port ${port}`);
+                console.log(`API running on port ${port}`);
             });
         });
     }
